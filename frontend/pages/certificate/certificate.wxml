@@ -1,0 +1,12 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+
+<view class="box">
+  <view class="analysisbox">
+    <view class="title">
+      查看证书
+    </view>
+    <image class="picture" src="{{certificatePicUrl}}" />
+  </view>
+</view>

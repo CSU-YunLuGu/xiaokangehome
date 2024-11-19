@@ -1,0 +1,68 @@
+.box {
+  padding: 30rpx;
+  padding-top: 420rpx;
+  padding-bottom: 30rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.author {
+  position: absolute;
+  left: 30rpx;
+  top: 15rpx;
+  width: 250rpx;
+  height: 40rpx;
+  font-size: 25rpx;
+  line-height: 40rpx;
+}
+
+.time {
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  width: 250rpx;
+  height: 40rpx;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-align: right;
+}
+
+.pic {
+  position: absolute;
+  left: 0;
+  top: 70rpx;
+  width: 648rpx;
+  height: 330rpx;
+  background-color: black;
+}
+
+.picture {
+  position: absolute;
+  left: 0; 
+  top: 0;  
+  width: 648rpx;
+  height: 330rpx;
+}
+
+/* .title {
+  position: absolute;
+  left: 50rpx;
+  top: 320rpx;
+  height: 100rpx;
+  width: 550rpx;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+} */
+
+.title {
+  /* margin-left: 50rpx;
+  margin-top: 320rpx;  */
+  /* height: 100rpx; */
+  width: 590rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+}

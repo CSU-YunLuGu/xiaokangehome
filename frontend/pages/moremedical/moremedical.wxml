@@ -1,0 +1,36 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <view class="medicine">
+    <view class="title">
+      吃药记录
+    </view>
+    <view class="records">
+      <view class="record" wx:for="{{medicineRecord}}" wx:key="index">
+        【{{item.date}}】{{item.detail}}
+      </view>
+    </view>
+  </view>
+  <view class="consult">
+    <view class="title">
+      看病记录
+    </view>
+    <view class="records">
+      <view class="record" wx:for="{{consultRecord}}" wx:key="index">
+        【{{item.date}}】{{item.detail}}
+      </view>
+    </view>
+  </view>
+  <!-- <view class="title">
+      吃药看病
+    </view>
+    <view class="meoption" bind:tap="more">
+      更多<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>▶
+    </view>
+    <view class="record">
+      <text>【吃药记录 | {{latestMedicineDate}}】{{latestMedicine}}</text>
+      <text>\n</text>
+      <text>【看病记录 | {{latestConsultDate}}】{{latestConsult}}</text>
+    </view> -->
+</view>

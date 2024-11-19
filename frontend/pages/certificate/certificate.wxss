@@ -1,0 +1,39 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.box {
+  position: absolute;
+  left: 50rpx;
+  top: 20%;
+  width: 650rpx;
+  padding-bottom: 30%;
+}
+
+.analysisbox {
+  position: absolute;
+  margin-top: 20rpx;
+  display: block;
+  width: 650rpx;
+  height: 520rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.picture {
+  position: absolute;
+  width: 520rpx;
+  height: 390rpx;
+  left: 65rpx;
+  top: 100rpx;
+}

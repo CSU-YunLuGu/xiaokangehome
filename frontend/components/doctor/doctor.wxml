@@ -1,0 +1,21 @@
+<view class="box">
+  <view class="image">
+    <image class="photo" src="{{server + photoUrl}}" bind:tap="showUrl" />
+  </view>
+  <view class="doctorInfo">
+    <text>
+      【姓名】{{name}}
+      【专业】{{major}}
+      【职称】{{job}}
+      <!-- 评分：{{rating}} -->
+    </text>
+  </view>
+  <view wx:if="{{environment===1}}">
+    <view class="delete button" bind:tap="delete">删除</view>
+    <view class="ask button" bind:tap="ask">问诊</view>
+  </view>
+  <view wx:if="{{environment===2}}">
+    <view class="delete button" bind:tap="add">添加</view>
+    <view class="ask button" bind:tap="certificate">查看证书</view>
+  </view>
+</view>

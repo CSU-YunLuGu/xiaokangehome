@@ -1,0 +1,30 @@
+var buttonName = function (valid) {
+  if (valid === undefined) {
+    return "提交认证"
+  }
+  if (valid === null) {
+    return "认证审核中"
+  }
+  if (valid) {
+    return "修改认证"
+  }
+  return "重新提交"
+}
+
+var explain = function (valid) {
+  if (valid === undefined) {
+    return "您尚未提交认证"
+  }
+  if (valid === null) {
+    return "您已提交认证，请等待后台审核"
+  }
+  if (valid) {
+    return "恭喜，您已通过认证审核"
+  }
+  return "您未通过认证审核，请重新提交"
+}
+
+module.exports = {
+  buttonName: buttonName,
+  explain: explain
+}

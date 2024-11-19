@@ -1,0 +1,20 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <!-- <analysis /> -->
+  <view class="analysisbox">
+    <view class="title">
+      问题发布
+    </view>
+    <textarea bindinput="getQuestion" placeholder="在这里发布你的问题吧~" />
+    <view class="submit" bind:tap="search">
+      提交
+    </view>
+  </view>
+</view>
+<view class="consulthistory">
+  <view wx:for="{{consultHistory}}" wx:key="index">
+    <con bind:tap="onConsultPressed" isAsk="{{true}}" data-id="{{consultHistory[index].id}}" data-answerlength="{{consultHistory[index].answer.length}}" time="{{consultHistory[index].time}}" question="{{consultHistory[index].question}}" answer="{{consultHistory[index].answer}}" />
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <view class="askbox">
+    <view class="title">
+      添加医生
+    </view>
+    <view class="button find" bind:tap="find">
+      搜索医生
+    </view>
+    <!-- <view class="button findbymajor" bind:tap="findByMajor">
+      按专业搜索
+    </view>
+    <view class="button findbyjob" bind:tap="findByJob">
+      按职称搜索
+    </view> -->
+  </view>
+  <view class="doctors">
+    <view wx:for="{{doctorList}}" wx:key="index" data-index="{{index}}">
+      <doctor data-id="{{item.id}}" data-userId="{{item.userId}}" userId="{{item.userId}}" id="{{item.id}}" photoUrl="{{item.photoUrl}}" name="{{item.name}}" gender="{{item.gender}}" major="{{item.major}}" job="{{item.job}}" environment="1" bind:ask="ask" bind:delete="delete" />
+    </view>
+  </view>
+</view>

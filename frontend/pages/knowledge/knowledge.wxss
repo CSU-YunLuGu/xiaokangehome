@@ -1,0 +1,71 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.title {
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.button {
+  width: 250rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background-color: rgb(255, 188, 60);
+  color: white;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;  
+  top: 120rpx;
+}
+
+.ask {
+  left: 50rpx;
+}
+
+.answer {
+  left: 350rpx;
+}
+
+.box {
+  position: absolute;
+  left: 50rpx;
+  top: 20%;
+}
+
+.askbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 20rpx;
+  /* padding-bottom: 50rpx; */
+  width: 650rpx;
+  height: 220rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+}
+
+.articles {
+  position: absolute;
+  left: 0rpx;
+  top: 280rpx;
+  width: 650rpx;
+  padding-bottom: 200rpx;
+}
+
+article {
+  display: inline-block;
+  margin-bottom: 40rpx;
+}
+
+.blank {
+  position: absolute;
+  left: 0;
+  width: 650rpx;
+  height: 150rpx;
+}

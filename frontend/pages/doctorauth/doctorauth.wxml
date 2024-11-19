@@ -1,0 +1,45 @@
+<wxs module="m" src="./doctorauth.wxs" />
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <view class="authbox">
+    <!-- <view class="authtitle">
+      <text>
+        医生
+        认证
+      </text>
+    </view> -->
+    <view class="certificatephoto" bind:tap="onCertificatePic">
+      <image wx:if="{{certificatePicUrl !== ''}}" src="{{a + certificatePicUrl}}" class="certificateimg" />
+      <text class="c" wx:if="{{!certificatePicUrl}}">上传从业资格执照</text>
+    </view>
+    <view class="photo" bind:tap="onPhoto">
+      <text class="p" wx:if="{{!photoUrl}}">上传个人照片</text>
+      <image wx:if="{{photoUrl !== ''}}" src="{{a + photoUrl}}" class="photoimg" />
+    </view>
+  </view>
+
+  <view class="submitbox">
+    <view class="inputs" wx:for="{{labels}}" wx:key="index">
+      <view class="label">
+        {{labels[index]}}
+      </view>
+      <view class="input">
+        <input value="{{values[index]}}" bindinput="inputHandle" data-index="{{index}}" placeholder="{{placeholders[index]}}" />
+      </view>
+    </view>
+    <view class="explain">
+      {{m.explain(valid)}}
+    </view>
+    <view class="ok" bind:tap="submitHandle">
+      {{m.buttonName(valid)}}
+    </view>
+    <view class="gender" bind:tap="bindJob">
+      <view class="labeldate"></view>
+    </view>
+    <!-- <view class="auth" bind:tap="cer">
+      实名认证
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+
+<view class="box">
+  <view bind:tap="onChoosePatient" data-id="{{item.id}}" class="patients" wx:for="{{patientList}}" wx:key="index" data-index="{{index}}">
+    <image src="{{item.avatar}}"></image>
+    <view class="name">
+      {{item.name}}（{{item.username}}）
+    </view>
+    <view class="moreinfo">
+      {{item.gender === null ? "" : (item.gender === true ? "男" : "女")}}
+      {{item.birthday === null ? "" : ("，" + item.birthday)}}
+      {{item.height === null ? "" : ("，身高" + item.height + "CM")}}
+      {{item.weight === null ? "" : ("，体重" + item.weight + "KG")}}
+      {{item.medicalHistory === "" ? "" : ("，" + item.medicalHistory)}}
+      {{item.allergyHistory === "" ? "" : ("，" + item.allergyHistory)}}
+    </view>
+  </view>
+</view>

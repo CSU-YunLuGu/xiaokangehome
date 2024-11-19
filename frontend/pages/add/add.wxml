@@ -1,0 +1,21 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="searchbox">
+  <view class="input">
+    <input bindinput="getKey" />
+  </view>
+  <view class="icon" bind:tap="search">
+    <image class="iconimg" src="../../images/search.png" />
+  </view>
+</view>
+<view class="doctors">
+  <view wx:for="{{doctorList}}" wx:key="index" data-index="{{index}}">
+    <doctor data-id="{{item.id}}" data-cerurl="{{item.certificatePicUrl}}" photoUrl="{{item.photoUrl}}" name="{{item.name}}" gender="{{item.gender}}" major="{{item.major}}" job="{{item.job}}" environment="2" bind:add="add" bind:cer="certificate" />
+  </view>
+</view>
+<!-- <modal hidden="{{hidden}}" title="{{name}}" confirm-text="确定" bindconfirm="confirm" no-cancel="true">
+  <view class="modalbox">
+    <image class="image" src="{{certificatePicUrl}}"></image>
+  </view>
+</modal> -->

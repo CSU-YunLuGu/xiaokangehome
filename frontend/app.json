@@ -1,0 +1,69 @@
+{
+  "text": [
+    "",
+    "pages/user/user"
+  ],
+  "pages": [
+    "pages/index/index",
+    "pages/data/data",
+    "pages/connect/connect",
+    "pages/ask/ask",
+    "pages/add/add",
+    "pages/knowledge/knowledge",
+    "pages/authentication/authentication",
+    "pages/consult/consult",
+    "pages/articledetail/articledetail",
+    "pages/moremedical/moremedical",
+    "pages/doctorauth/doctorauth",
+    "pages/patientauth/patientauth",
+    "pages/idcard/idcard",
+    "pages/chat/chat",
+    "pages/newrecord/newrecord",
+    "pages/newmedical/newmedical",
+    "pages/questiondetail/questiondetail",
+    "pages/answer/answer",
+    "pages/answerdetail/answerdetail",
+    "pages/diagnose/diagnose",
+    "pages/visit/visit",
+    "pages/certificate/certificate"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "custom": true,
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/data/data",
+        "iconPath": "tabbaricons/first/icon.png",
+        "selectedIconPath": "tabbaricons/first/selectedicon.png",
+        "text": "健康数据"
+      },
+      {
+        "pagePath": "pages/ask/ask",
+        "iconPath": "tabbaricons/second/icon.png",
+        "selectedIconPath": "tabbaricons/second/selectedicon.png",
+        "text": "线上咨询"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "iconPath": "tabbaricons/third/icon.png",
+        "selectedIconPath": "tabbaricons/third/selectedicon.png",
+        "text": "健康知识"
+      },
+      {
+        "pagePath": "pages/authentication/authentication",
+        "iconPath": "tabbaricons/fourth/icon.png",
+        "selectedIconPath": "tabbaricons/fourth/selectedicon.png",
+        "text": "身份信息"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

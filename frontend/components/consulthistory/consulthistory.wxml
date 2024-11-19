@@ -1,0 +1,8 @@
+<view class="box">
+  <view class="content">
+    <text>【时间】{{time}}\n</text> 
+    <text>【问题】{{question}}\n</text>
+    <text wx:if="{{isAsk}}">【回答】{{answer.length>0 ? "点击查看全部回答" : "暂未收到回答"}}</text>
+    <view wx:if="{{!isAsk}}" class="notice">点击卡片参与回答</view>
+  </view>
+</view>

@@ -1,0 +1,189 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.box {
+  position: absolute;
+  left: 50rpx;
+  top: 20%;
+}
+
+.submitbox {
+  position: absolute;
+  left: 0;
+  top: 390rpx;
+  padding: 50rpx;
+  padding-top: 30rpx;
+  padding-bottom: 25rpx;
+  width: 550rpx;
+  background-color: rgba(102, 255, 105, 0.6);
+  border-radius: 15rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.3);
+}
+
+.explain {
+  width: 550rpx;
+  height: 80rpx;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: black;
+}
+
+.inputs {
+  border-radius: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  position: relative;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+
+.label {
+  position: absolute;
+  left: 20rpx;
+  height: 60rpx;
+  top: 0;
+  width: 100rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;  
+  font-weight: 700;
+}
+
+.input {
+  position: absolute;
+  top: 5rpx;
+  left: 150rpx;
+  width: 360rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.gender {
+  position: absolute;
+  height: 62rpx;
+  width: 550rpx;
+  left: 50rpx;
+  top: 110rpx;
+}
+
+.labeldate {
+  position: absolute;
+  height: 62rpx;
+  width: 550rpx;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.ok {
+  display: inline-block;
+  width: 350rpx;
+  margin-left: 100rpx;
+  height: 60rpx;
+  background: #48E137;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: white;
+  /* font-weight: 700; */
+}
+
+.auth {
+  margin-top: 30rpx;
+  display: inline-block;
+  width: 250rpx;
+  margin-left: 50rpx;
+  height: 60rpx;
+  background: rgb(30, 221, 33);
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+
+.authbox {
+  position: absolute;
+  left: 0;
+  top: 0; 
+  margin-top: 20rpx;
+  width: 650rpx;
+  height: 328rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+}
+
+.authtitle {
+  width: 100rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+}
+
+.certificatephoto {
+  width: 384rpx;
+  height: 288rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  font-size: 30rpx;
+  line-height: 288rpx;
+  text-align: center;
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20rpx;
+}
+
+.photo {
+  width: 216rpx;
+  height: 288rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 30rpx;
+  line-height: 288rpx;
+  text-align: center;
+  color: grey;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20rpx;
+}
+
+.certificateimg {
+  width: 384rpx;
+  height: 288rpx;
+  border-radius: 20rpx;
+}
+
+.photoimg {
+  width: 216rpx;
+  height: 288rpx;
+  border-radius: 20rpx;
+}
+
+text {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  text-align: center;
+}
+
+.c {
+  width: 384rpx;
+}
+
+.p {
+  width: 216rpx;
+}

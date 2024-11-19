@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "title": "../../components/title/title",
+    "return": "../../components/icons/return/return",
+    "bg": "../../components/bg/bg"
+  }
+}

@@ -1,0 +1,37 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <view class="add">
+    <view class="title">
+      今日打卡
+    </view>
+    <view class="details">
+      <view class="detailtitle detailtext1">
+        运动时长（单位：分钟）
+      </view>
+      <input class="i input1" value="{{exerciseDuration}}" bindinput="handleInput1" placeholder="请填入 0 ~ 1440 之间的整数"></input>
+      <view class="detailtitle detailtext2">
+        心率（单位：次/分钟）
+      </view>
+      <input class="i input2" value="{{heartRate}}" bindinput="handleInput2" placeholder="请填入 0 ~ 999 之间的整数"></input>
+      <view class="detailtitle detailtext3">
+        睡眠时长（单位：小时）
+      </view>
+      <input class="i input3" value="{{sleepDuration}}" bindinput="handleInput3" placeholder="请填入 0 ~ 24 之间的整数"></input>
+      <view class="detailtitle detailtext4">
+        舒张压（单位：毫米汞柱）
+      </view>
+      <input class="i input4" value="{{diastolicPressure}}" bindinput="handleInput4" placeholder="请填入 0 ~ 999 之间的整数"></input>
+      <view class="detailtitle detailtext5">
+        收缩压（单位：毫米汞柱）
+      </view>
+      <input class="i input5" value="{{systolicPressure}}" bindinput="handleInput5" placeholder="请填入 0 ~ 999 之间的整数"></input>
+    </view>
+    <!-- <view class="detailtext">
+      运动时长
+    </view>
+    <textarea class="input" value="{{text}}" bindinput="handleInput" placeholder="请输入内容"></textarea> -->
+    <view class="submit" bind:tap="onRecordSubmit">提交记录</view>
+  </view>
+</view>

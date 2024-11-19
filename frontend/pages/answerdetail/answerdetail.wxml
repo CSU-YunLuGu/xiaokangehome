@@ -1,0 +1,38 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">
+  <view class="detail">
+    <view class="detailtitle">
+      问题详情
+    </view>
+    <view class="question">
+      {{detail.question}}
+    </view>
+    <view class="time">
+      {{detail.username}} 提问于 {{detail.time}}
+    </view>
+
+  </view>
+
+  <view class="myanswer">
+    <view class="detailtitle">
+      我的回答
+    </view>
+    <textarea bindinput="handleInput" value="{{myAnswer}}" placeholder="请填写你的回答~" />
+    <view class="submit" bind:tap="onRecordSubmit">
+      提交
+    </view>
+  </view>
+
+  <view class="answerlist" wx:if="{{detail.answer.length > 0}}">
+    <view class="detailtitle">
+      回答列表
+    </view>
+    <view class="answers" wx:for="{{detail.answer}}" wx:key="index">
+      <view class="user">{{item.user}}</view>
+      <view class="answertime">{{item.time}}</view>
+      <view class="answer">{{item.answer}}</view>
+    </view>
+  </view>
+</view>

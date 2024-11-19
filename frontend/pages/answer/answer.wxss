@@ -1,0 +1,51 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.consulthistory {
+  position: absolute;
+  top: 30%;
+  margin-top: 30rpx;
+  left: 50rpx;
+  width: 650rpx;
+  padding-bottom: 10%;
+}
+
+con {
+  display: block;
+}
+
+.searchbox {
+  width: 650rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 20%;
+  margin-top: 40rpx;
+  border-radius: 15rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 15rpx rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  position: absolute;
+  left: 20rpx;
+  top: 5rpx;
+  width: 480rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}
+
+.icon {
+  position: absolute;
+  left: 600rpx;
+  top: 10rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.iconimg {
+  width: 45rpx;
+  height: 45rpx;
+}

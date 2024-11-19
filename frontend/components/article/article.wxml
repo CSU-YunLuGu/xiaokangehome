@@ -1,0 +1,9 @@
+<view class="box">
+  <view class="author">{{author}}</view>
+  <view class="time">{{time}}</view>
+  <view class="pic">
+    <image class="picture" src="{{picUrl}}">
+    </image>
+  </view>
+  <view class="title">{{title}}</view>
+</view>

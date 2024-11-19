@@ -1,0 +1,38 @@
+/* components/device/device.wxss */
+
+.single {
+  width: 320rpx;
+  height: 160rpx;
+  /* margin: 20rpx; */
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.5);
+  background-color: white;
+  position: relative;
+}
+
+image {
+  width: 120rpx;
+  height: 120rpx;
+  opacity: 1;
+}
+
+.image {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+}
+
+.devicename {
+  position: absolute;
+  left: 140rpx;
+  top: 30rpx;
+  font-size: 35rpx;
+  line-height: 50rpx;
+}
+
+.datatype {
+  position: absolute;
+  left: 140rpx;
+  top: 100rpx;
+  font-size: 20rpx;
+}

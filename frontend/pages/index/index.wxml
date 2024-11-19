@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+<view class="index">
+  <view class="logo">
+    <image class="image" src="../../images/logo.png">
+    </image>
+    <view class="explain">
+      晓康e家
+    </view>
+  </view>
+  <!-- <view class="identity">
+    <view class="doctor {{dclass}}" bind:tap="onDoctorChosen">
+      我是医生
+    </view>
+    <view class="patient {{pclass}}" bind:tap="onPatientChosen">
+      我是患者
+    </view>
+  </view> -->
+  <!-- <view class="loginexplain">
+    授权绑定手机号 为您提供更好的服务
+  </view> -->
+  <view class="loginbutton" bind:tap="onLoginButtonPressed">
+    一键登录
+  </view>
+  <!-- <view class="loginelse">
+    暂不登录
+  </view> -->
+</view>
