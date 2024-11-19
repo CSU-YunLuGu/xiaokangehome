@@ -1,0 +1,43 @@
+.bg {
+  width: 2000rpx;
+  height: 2000rpx;
+  /* position: absolute; */
+  position: fixed;
+  left: -900rpx;
+  top: -1600rpx;
+  border-radius: 1000rpx;
+  filter: blur(20rpx);
+}
+
+.circle1 {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 50rpx;
+  top: 80rpx;
+  filter: blur(4rpx);
+}
+
+.circle2 {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 80rpx;
+  top: 200rpx;
+  filter: blur(4rpx);
+}
+
+.circle3 {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 15rpx;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 130rpx;
+  top: 280rpx;
+  filter: blur(2rpx);
+}

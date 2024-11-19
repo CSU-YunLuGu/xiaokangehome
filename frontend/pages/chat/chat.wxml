@@ -1,0 +1,41 @@
+<!-- pages/chat/chat.wxml -->
+
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+
+<view class="chat-container">
+  <!-- 顶部聊天对象名称 -->
+  <view class="header">
+    <!-- <view class="chat-title">{{doctor}}</view> -->
+  </view>
+
+  <!-- 聊天消息显示区域 -->
+  <scroll-view scroll-y="true" class="message-list" scroll-into-view="{{toView}}" scroll-with-animation="true">
+    <block wx:for="{{messages}}" wx:key="id">
+      <!-- 显示时间 -->
+      <view wx:if="{{item.showTime}}" class="time-display">{{item.time}}</view>
+      <!-- 消息内容 -->
+      <view id="msg-{{index}}" class="message-item {{item.send ? 'my-message' : 'other-message'}}">
+        <!-- 头像 -->
+        <image class="avatar" src="{{item.send ? myAvatar : otherAvatar}}" mode="aspectFill"></image>
+        <!-- 名字 -->
+        <view class="name">
+          {{item.send ? myName : otherName}}
+        </view>
+        <!-- 消息气泡 -->
+        <view class="bubble">
+          <text class="content">{{item.content}}</text>
+        </view>
+        <!-- 时间戳 -->
+        <text class="time">{{item.time}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 输入框和发送按钮 -->
+  <view class="input-container">
+    <input class="input-field" bindinput="onInputChange" value="{{inputValue}}" placeholder="输入消息..." />
+    <button wx:if="{{inputValue}}" class="send-button" bind:tap="sendMessage" style="width: 200rpx;">发送</button>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/datum/datum.wxml-->
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="devices">
+  <view class="device"  wx:for="{{devices}}" wx:key="index">
+    <device deviceName="{{devices[index].deviceName}}" dataType="{{devices[index].dataType}}"></device>
+  </view>
+</view>

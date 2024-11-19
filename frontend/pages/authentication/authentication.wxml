@@ -1,0 +1,48 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<!-- <plus class="plus" bind:tap="onClickButton" /> -->
+<view class="box">
+  <view class="userinfobox">
+    <!-- <view class="userinfotitle">
+      我的资料
+    </view> -->
+    <view class="username">
+      {{username}}
+    </view>
+    <view class="id">
+      id:{{userId}}
+    </view>
+    <button class="avatar" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+      <image src="{{avatarUrl}}" />
+    </button>
+    <view class="updateuserinfo" bind:tap="onEdit">
+      编辑资料
+    </view>
+    <view class="moreinfo">
+      <view>姓 名</view>
+      <view>性 别</view>
+      <view>出生日期</view>
+      <view>身 高</view>
+      <view>体 重</view>
+      <view>疾病史</view>
+      <view>过敏史</view>
+    </view>
+    <view class="moreinfocontext">
+      <view>{{name}}</view>
+      <view>{{gender}}</view>
+      <view>{{birthday}}</view>
+      <view>{{height}}</view>
+      <view>{{weight}}</view>
+      <view>{{diseaseHistory}}</view>
+      <view>{{allergicHistory}}</view>
+    </view>
+  </view>
+  <view class="identificationbox">
+    <view class="userinfotitle">
+      身份认证
+    </view>
+    <view class="identify" bind:tap="onIdentify">
+      医生认证
+    </view>
+  </view>
+</view>

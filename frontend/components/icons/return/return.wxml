@@ -1,0 +1,3 @@
+<!--components/icons/return/return.wxml-->
+
+<image src="../../../images/return.png" class="return" bind:tap="onReturn" />

@@ -1,0 +1,41 @@
+/* pages/ask/ask.wxss */
+
+.doctors {
+  position: absolute;
+  top: 23%;
+  width: 750rpx;
+  padding-bottom: 20%;
+}
+
+.button {
+  width: 350rpx;
+  height: 250rpx;
+  border-radius: 20rpx;
+  line-height: 250rpx;
+  font-size: 40rpx;
+  background-color: rgb(225, 124, 245);
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  left: 200rpx;
+}
+
+.doctor {
+  top: 450rpx;
+}
+
+.patient {
+  top: 800rpx;
+}
+
+doctor {
+  display: inline-block;
+  margin: 50rpx;
+  margin-top: 0rpx;
+  margin-bottom: 30rpx;
+}
+
+page {
+  background: rgba(244, 244, 244, 1);
+}

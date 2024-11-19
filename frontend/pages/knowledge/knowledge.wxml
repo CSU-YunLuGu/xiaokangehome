@@ -1,0 +1,23 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<!-- <plus class="plus" bind:tap="onClickButton" /> -->
+
+<view class="box">
+  <view class="askbox">
+    <view class="title">
+      问答专区
+    </view>
+    <view class="button ask" bind:tap="onAsk">
+      我要提问
+    </view>
+    <view class="button answer" bind:tap="onAnswer">
+      我要回答
+    </view>
+  </view>
+
+  <view class="articles">
+    <view wx:for="{{articles}}" wx:key="index">
+      <article bind:tap="onDetail" data-id="{{articles[index].id}}" author="{{articles[index].author}}" time="{{articles[index].time}}" picUrl="{{articles[index].pictureUrl}}" title="{{articles[index].title}}"></article>
+    </view>
+  </view>
+</view>

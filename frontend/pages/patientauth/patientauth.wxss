@@ -1,0 +1,114 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.submitbox {
+  position: absolute;
+  left: 50rpx;
+  top: 25%;
+  padding: 50rpx;
+  padding-top: 30rpx;
+  padding-bottom: 25rpx;
+  width: 550rpx;
+  background-color: rgba(102, 255, 105, 0.6);
+  border-radius: 15rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.3);
+}
+
+.inputs {
+  border-radius: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  position: relative;
+  background-color: white;
+  margin-bottom: 20rpx;
+}
+
+.label {
+  position: absolute;
+  left: 20rpx;
+  height: 60rpx;
+  top: 0;
+  width: 120rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.input {
+  position: absolute;
+  top: 7rpx;
+  left: 170rpx;
+  width: 360rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+picker {
+  position: absolute;
+  height: 62rpx;
+  width: 550rpx;
+  left: 50rpx;
+  top: 260rpx;
+}
+
+.gender {
+  position: absolute;
+  height: 62rpx;
+  width: 550rpx;
+  left: 50rpx;
+  top: 184rpx;
+}
+
+.labeldate {
+  position: absolute;
+  height: 62rpx;
+  width: 550rpx;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.ok {
+  display: inline-block;
+  width: 350rpx;
+  margin-left: 100rpx;
+  height: 60rpx;
+  background: #48E137;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: white;
+  /* font-weight: 700; */
+}
+
+.auth {
+  display: inline-block;
+  width: 250rpx;
+  margin-left: 50rpx;
+  height: 60rpx;
+  background: rgb(30, 221, 33);
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+auth {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 30rpx;
+}
+
+submit {
+  position: absolute;
+  left: 0;
+  top: 50rpx;
+}

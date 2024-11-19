@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "title": "../../components/title/title",
+    "plus": "../../components/icons/plus/plus",
+    "doctor": "../../components/doctor/doctor",
+    "bg": "../../components/bg/bg"
+  }
+}

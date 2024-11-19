@@ -1,0 +1,15 @@
+/* components/icons/plus/plus.wxss */
+
+.plus {
+  width: 60rpx;
+  height: 60rpx;
+  opacity: 1;
+  position: absolute;
+  top: 12%;
+  left: 650rpx;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+}

@@ -1,0 +1,21 @@
+/* components/consulthistory/consulthistory.wxss */
+
+.box {
+  padding: 35rpx;
+  margin-bottom: 40rpx;
+  background-color: white;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+  border-radius: 15rpx;
+}
+
+.content {
+  font-size: 25rpx;
+  line-height: 40rpx;
+  width: 580rpx;
+}
+
+.notice {
+  margin-top: 20rpx;
+  width: 580rpx;
+  text-align: center;
+}

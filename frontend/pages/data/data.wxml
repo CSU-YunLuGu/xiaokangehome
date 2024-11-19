@@ -1,0 +1,77 @@
+<wxs module="m" src='../data/analysis.wxs' />
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<!-- <plus class="plus" bind:tap="onClickButton" /> -->
+<view class="box">
+  <!-- <analysis /> -->
+  <view class="analysisbox">
+    <view class="title">
+      七天记录
+    </view>
+    <view class="changetitle" bind:tap="changeOption">
+      切换
+    </view>
+    <view class="meoption" bind:tap="onNew1">
+      添加记录
+    </view>
+    <view class="anoption">
+      <!-- <view class="anoption" bind:tap="anStartChange" wx:if="{{!anchangable}}"> -->
+      {{anoptions[ani]}}（单位：{{units[ani]}}）
+    </view>
+    <!-- <view class="show" wx:if="{{!anchangable}}"> -->
+    <view class="show">
+      <view class="axis">
+      </view>
+      <view class="dataList" wx:for="{{dataList[ani]}}" wx:key="index" data-index="{{index}}">
+        <view class="data" style="position: absolute; left: {{40+index*80}}rpx; bottom: {{m.l(item, dataList[ani])}}rpx; height: {{m.h(item, dataList[ani])}}rpx;" />
+        <view class="l" style="position: absolute; left: {{20+index*80}}rpx; bottom: {{m.l(item, dataList[ani])-35}}rpx;">
+          {{m.d(item)}}
+        </view>
+        <view class="u" style="position: absolute; left: {{20+index*80}}rpx; bottom: {{m.u(item, dataList[ani])}}rpx;">
+          {{m.m(item)}}
+        </view>
+      </view>
+      <view class="dateList" wx:for="{{dateList}}" wx:key="index" data-index="{{index}}">
+        <view class="date" style="position: absolute; left: {{20+index*80}}rpx; top: 0">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <food /> -->
+  <!-- <view class="foodbox">
+    <view wx:if="{{fochangable}}">
+      <view class="fooptions" bind:tap="foStartChange" style="position: absolute; right: 30rpx; top: 30rpx;">▲</view>
+      <view wx:for="{{fooptions}}" class="fooptions" wx:key="index" bind:tap="foChangeOption" data-value="{{item}}" data-foi="{{index}}" style="position: absolute; right: 30rpx; top: {{30+(index+1)*40}}rpx;" class="fooptions">
+        {{item}}
+      </view>
+    </view>
+    <view class="title">
+      膳食推荐
+    </view>
+    <view class="fooption" wx:if="{{!fochangable}}" bind:tap="foStartChange">
+      {{fooptions[foi]}}<text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>▼
+    </view>
+    <view class="recommend" wx:if="{{!fochangable}}">
+      {{recommend[foi]}}
+    </view>
+  </view> -->
+
+  <view class="medicalbox">
+    <view class="title">
+      吃药看病
+    </view>
+    <view class="moreoption" bind:tap="onMore">
+      更多记录
+    </view>
+    <view class="meoption" bind:tap="onNew2">
+      添加记录
+    </view>
+    <view class="record">
+      <text>【吃药记录 | {{latestMedicineDate}}】{{latestMedicine}}</text>
+      <text>\n</text>
+      <text>【看病记录 | {{latestConsultDate}}】{{latestConsult}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--components/icons/plus/plus.wxml-->
+<view class="plus" >
+<image class="icon" src="../../../images/plus.png" />
+</view>

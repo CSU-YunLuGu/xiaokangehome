@@ -1,0 +1,45 @@
+/* pages/diagnose/diagnose.wxss */
+
+.patients {
+  position: relative;
+  display: inline-block;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  width: 650rpx;
+  height: 200rpx;
+  background-color: white;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  position: absolute;
+  left: 50rpx;
+  top: 20%;
+}
+
+image {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  left: 35rpx;
+  top: 25rpx;
+  border-radius: 10rpx;
+}
+
+.name {
+  position: absolute;
+  width: 450rpx;
+  height: 50rpx;
+  left: 220rpx;
+  top: 30rpx;
+  font-size: 30rpx;
+}
+
+.moreinfo {
+  position: absolute;
+  width: 400rpx;
+  height: 100rpx;
+  left: 220rpx;
+  top: 80rpx;
+  font-size: 25rpx;
+}

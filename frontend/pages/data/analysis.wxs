@@ -1,0 +1,40 @@
+var top = 140;
+
+var max = function (arr) {
+  var maxVal = 0; 
+  for (var i = 0; i < arr.length; i++) {
+    var u = arr[i] % 1000;
+    if (u > maxVal) {
+      maxVal = u; 
+    }
+  }
+  return maxVal;
+}
+
+var m = function(val) {
+  return val===null ? "" : val % 1000
+}
+
+var d = function(val) {
+  return val===null ? "" : parseInt(val / 1000);
+}
+
+var u = function(val, arr) {
+  var uu = max(arr) == 0 ? 0 : m(val) * top / max(arr);
+  // console.log("uu=" + uu);
+  return uu;
+}
+
+var l = function(val, arr) {
+  var ll = max(arr) == 0 ? 0 : d(val) * top / max(arr);
+  // console.log("ll=" + ll);
+  return ll;
+}
+
+var h = function(val, arr) {
+  return u(val, arr) - l(val, arr);
+}
+
+module.exports = {
+  m: m, d: d, u: u, l: l, h: h
+}

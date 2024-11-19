@@ -1,0 +1,6 @@
+<view class="bg" 
+  style="background: linear-gradient(150deg, {{color}} 60%, rgba(244, 244, 244, 0)  90%)" 
+/>
+<view class="circle1" />
+<view class="circle2" />
+<view class="circle3" />

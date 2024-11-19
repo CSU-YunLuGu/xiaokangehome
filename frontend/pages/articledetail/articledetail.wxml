@@ -1,0 +1,9 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="box">  
+<view class="title">{{articleTitle}}</view>
+  <view class="author">{{author}}</view>
+  <view class="time">{{time}}</view>
+  <view class="content">{{content}}</view>
+</view>

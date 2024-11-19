@@ -1,0 +1,51 @@
+page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.box {
+  position: absolute;
+  /* overflow: auto; */
+  width: 650rpx;
+  height: 950rpx;
+  left: 50rpx;
+  top: 30%;
+  /* background-color: white;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.3);
+  border-radius: 15rpx; */
+}
+
+.title {
+  display: block;
+  width: 550rpx;
+  margin: 50rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.author {
+  width: 450rpx;
+  margin: 50rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.time {
+  width: 450rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.content {
+  margin: 25rpx;
+  line-height: 60rpx;
+  margin-top: 100rpx;
+  width: 600rpx;
+  font-size: 30rpx;
+  padding-bottom: 200rpx;
+}

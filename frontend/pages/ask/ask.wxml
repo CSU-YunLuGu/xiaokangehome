@@ -1,0 +1,16 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<!-- <plus class="plus" bind:tap="onClickButton" /> -->
+<view class="box" wx:if="{{!isIdentityChosen}}">
+  <view class="button doctor" bind:tap="onChooseDoctor">
+    我是医生
+  </view>
+  <view class="button patient" bind:tap="onChoosePatient">
+    我是患者
+  </view>
+</view>
+<view class="doctors" wx:if="{{isIdentityChosen}}">
+  <view wx:if="{{identity === 'doctor'}}" wx:for="{{doctorList}}" wx:key="index" data-index="{{index}}">
+    <doctor id="{{item.id}}" photoUrl="{{item.photoUrl}}" name="{{item.name}}" specialty="{{item.specialty}}" title="{{item.title}}" rating="{{item.rating}}" environment="1" bind:ask="ask" />
+  </view>
+</view>

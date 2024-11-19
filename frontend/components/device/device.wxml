@@ -1,0 +1,13 @@
+<!--components/device/device.wxml-->
+
+<view class="single">
+  <view class="image">
+    <image src="../../images/device.png" />
+  </view>
+  <view class="devicename">
+    {{deviceName}}
+  </view>
+  <view class="datatype">
+    记录数据：{{dataType}}
+  </view>
+</view>

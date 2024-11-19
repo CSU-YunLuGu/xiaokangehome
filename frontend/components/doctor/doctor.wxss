@@ -1,0 +1,56 @@
+.box {
+  width: 650rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: relative;
+}
+
+.photo {
+  width: 180rpx;
+  height: 240rpx;
+  opacity: 1;
+  border-radius: 15rpx;
+}
+
+.image {
+  position: absolute;
+  left: 430rpx;
+  top: 40rpx;
+  width: 180rpx;
+  height: 240rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.2);
+}
+
+.doctorInfo {
+  position: absolute;
+  left: 50rpx;
+  top: -10rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+
+.delete {
+  position: absolute;
+  left: 50rpx;
+  top: 230rpx;
+}
+
+.button {
+  width: 150rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  background-color: rgb(225, 124, 245);
+  color: white;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.ask {
+  position: absolute;
+  left: 230rpx;
+  top: 230rpx;
+}

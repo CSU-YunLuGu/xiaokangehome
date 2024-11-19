@@ -1,0 +1,18 @@
+/* pages/datum/datum.wxss */
+
+.devices {
+  position: absolute;
+  left: 25rpx;
+  top: 25%;
+  width: 700rpx;
+}
+
+.device {  
+  display: inline-block;
+  margin: 15rpx;
+}
+
+page {
+  background: rgba(244, 244, 244, 1);
+}
+

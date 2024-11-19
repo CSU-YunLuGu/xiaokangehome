@@ -1,0 +1,10 @@
+/* components/icons/return/return.wxss */
+
+.return {
+  width: 50rpx;
+  height: 50rpx;
+  opacity: 1;
+  position: absolute;
+  top: 12%;
+  left: 650rpx;
+}

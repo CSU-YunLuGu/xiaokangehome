@@ -1,0 +1,25 @@
+<bg color="{{backgroundColor}}" />
+<title title="{{title}}" subtitle="{{subtitle}}"></title>
+<return />
+<view class="submitbox">
+  <view class="inputs" wx:for="{{labels}}" wx:key="index">
+    <view class="label">
+      {{labels[index]}}
+    </view>
+    <view class="input">
+      <input bindinput="inputHandle" value="{{values[index]}}" placeholder="{{placeholders[index]}}" data-index="{{index}}" />
+    </view>
+  </view>
+  <view class="ok" bind:tap="submitHandle">
+    提交编辑
+  </view>
+  <!-- <view class="auth" bind:tap="cer">
+    实名认证
+  </view> -->
+  <picker mode="date" header-text="选择出生日期" bindchange="bindDateChange">
+    <view class="labeldate"></view>
+  </picker>
+  <view class="gender" bind:tap="bindGender">
+    <view class="labeldate"></view>
+  </view>
+</view>

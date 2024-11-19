@@ -1,0 +1,9 @@
+<!--components/title/title.wxml-->
+<view class="component">
+  <view class="title">
+    {{title}}
+  </view>
+  <view class="subtitle">
+    {{subtitle}}
+  </view>
+</view>
