@@ -11,12 +11,12 @@
       </text>
     </view> -->
     <view class="certificatephoto" bind:tap="onCertificatePic">
-      <image wx:if="{{certificatePicUrl !== ''}}" src="{{a + certificatePicUrl}}" class="certificateimg" />
+      <image wx:if="{{certificatePicUrl !== ''}}" src="{{certificatePicUrl}}" class="certificateimg" />
       <text class="c" wx:if="{{!certificatePicUrl}}">上传从业资格执照</text>
     </view>
     <view class="photo" bind:tap="onPhoto">
       <text class="p" wx:if="{{!photoUrl}}">上传个人照片</text>
-      <image wx:if="{{photoUrl !== ''}}" src="{{a + photoUrl}}" class="photoimg" />
+      <image wx:if="{{photoUrl !== ''}}" src="{{photoUrl}}" class="photoimg" />
     </view>
   </view>
 

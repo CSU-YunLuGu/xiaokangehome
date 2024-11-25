@@ -9,13 +9,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    a: host,
     valid: undefined,
     title: "医生认证",
     subtitle: "陪伴您的每时每刻",
     backgroundColor: "#48E137",
-    certificatePicUrl: null,
-    photoUrl: null,
+    certificatePicUrl: "",
+    photoUrl: "",
     labels: ["专业", "职称"],
     placeholders: ["请填入不超过 10 个字符", "请选择您的职称"],
     values: ["", ""],
@@ -70,8 +69,9 @@ Page({
         icon: 'success'
       })
       this.setData({
-        certificatePicUrl: data
+        certificatePicUrl: host + data
       })
+      console.log(this.data)
     }).catch(err => {
       wx.showToast({
         title: '上传失败',
@@ -108,7 +108,7 @@ Page({
         icon: 'success'
       })
       this.setData({
-        photoUrl: data
+        photoUrl: host + data
       })
     }).catch(err => {
       wx.showToast({
@@ -184,11 +184,11 @@ Page({
         return;
       }
       this.setData({
-        certificatePicUrl: data.certificatePicUrl,
-        photoUrl: data.photoUrl,
+        certificatePicUrl: data.certificatePicUrl === "" ? "" : host + data.certificatePicUrl,
+        photoUrl: data.photoUrl === "" ? "" : host + data.photoUrl,
         values: [data.major, data.job],
         valid: data.valid
-      })
+      });
     }).catch(err => {
       console.error(err);
     })
