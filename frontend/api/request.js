@@ -24,6 +24,16 @@ function getToken() {
   return wx.getStorageSync(tokenKey) || '';
 }
 
+function reLogin() {
+  wx.redirectTo({
+    url: '../index/index',
+    fail: function (res) {
+      console.log(res)
+      console.log("fail")
+    }
+  })
+}
+
 // 封装 wx.request
 function request(options) {
   // 设置 methodName
@@ -52,14 +62,26 @@ function request(options) {
         }
         // 根据业务需求处理响应数据
         const response = res.data
-        if (res.statusCode === 200 && response.code === 0) {
-          resolve(response.data); // 请求成功，调用 resolve 并传递响应数据
-        } else {
-          const parsedResponse = JSON.parse(response)
-          if (parsedResponse.code === 0) {
-            resolve(parsedResponse.data)
+        if (res.statusCode === 200) {
+          if (response.code === 0) {
+            resolve(response.data); // 请求成功，调用 resolve 并传递响应数据
+          } else if (response.code == 401) {
+            wx.showToast({
+              title: '请重新登录',
+              icon: 'error'
+            })
+            setTimeout(() => {
+              reLogin()
+            }, 1000)
+          } else {
+            const parsedResponse = JSON.parse(response)
+            if (parsedResponse.code === 0) {
+              resolve(parsedResponse.data)
+            }
+            reject(res); // 请求失败，调用 reject 并传递响应对象
           }
-          reject(res); // 请求失败，调用 reject 并传递响应对象
+        } else {
+          reject(res)
         }
       },
       fail: (err) => { // 请求失败时的回调
