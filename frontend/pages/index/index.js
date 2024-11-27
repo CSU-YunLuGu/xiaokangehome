@@ -48,7 +48,7 @@ Page({
             // })
             // setInterval(() => {
               wx.switchTab({
-                url: '/pages/data/data',
+                url: '/pages/authentication/authentication',
               });
             // }, 1000);
           }).catch(error => {
