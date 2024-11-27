@@ -25,8 +25,12 @@ function getToken() {
 }
 
 function reLogin() {
+  const pages = getCurrentPages();
+  const currentPage = pages[pages.length - 1];
+  const page = "/" + currentPage.route
+  const pageEncode = encodeURIComponent(page)
   wx.redirectTo({
-    url: '../index/index',
+    url: '../index/index?page=' + pageEncode,
     fail: function (res) {
       console.log(res)
       console.log("fail")
@@ -66,13 +70,14 @@ function request(options) {
           if (response.code === 0) {
             resolve(response.data); // 请求成功，调用 resolve 并传递响应数据
           } else if (response.code == 401) {
-            wx.showToast({
-              title: '请重新登录',
-              icon: 'error'
+            wx.showModal({
+              title: '请登录',
+              content: '登录小程序并进一步使用功能',
+              showCancel: false,
+              complete: (res) => {
+                reLogin()
+              }
             })
-            setTimeout(() => {
-              reLogin()
-            }, 1000)
           } else {
             const parsedResponse = JSON.parse(response)
             if (parsedResponse.code === 0) {

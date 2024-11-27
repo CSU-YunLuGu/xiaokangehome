@@ -8,7 +8,8 @@ Page({
     identity: "",
     pclass: "notchosen",
     dclass: "notchosen",
-    isIdentityChosen: false
+    isIdentityChosen: false,
+    page: ""
   },
   onDoctorChosen: function () {
     this.setData({
@@ -60,6 +61,21 @@ Page({
         }
       },
     });
+  },
+
+  onLoad: function (options) {
+    const page = decodeURIComponent(options.page);
+    this.setData({
+      page: page
+    })
+  },
+
+  onLoginElse: function () {
+    console.log("***")
+    wx.switchTab({
+      url: "/pages/ask/ask",
+    })
+    wx.navigateTo();
   }
 })
 

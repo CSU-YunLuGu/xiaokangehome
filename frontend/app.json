@@ -1,13 +1,8 @@
 {
-  "text": [
-    "",
-    "pages/user/user"
-  ],
   "pages": [
-    "pages/index/index",
+    "pages/ask/ask",
     "pages/data/data",
     "pages/connect/connect",
-    "pages/ask/ask",
     "pages/add/add",
     "pages/knowledge/knowledge",
     "pages/authentication/authentication",
@@ -24,7 +19,8 @@
     "pages/answerdetail/answerdetail",
     "pages/diagnose/diagnose",
     "pages/visit/visit",
-    "pages/certificate/certificate"
+    "pages/certificate/certificate",
+    "pages/index/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
