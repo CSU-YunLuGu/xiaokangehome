@@ -16,7 +16,6 @@
     "pages/moremedical/moremedical",
     "pages/doctorauth/doctorauth",
     "pages/patientauth/patientauth",
-    "pages/idcard/idcard",
     "pages/chat/chat",
     "pages/newrecord/newrecord",
     "pages/newmedical/newmedical",
