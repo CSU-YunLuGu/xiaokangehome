@@ -69,9 +69,9 @@
       添加记录
     </view>
     <view class="record">
-      <text>【吃药记录 | {{latestMedicineDate}}】{{latestMedicine}}</text>
-      <text>\n</text>
-      <text>【看病记录 | {{latestConsultDate}}】{{latestConsult}}</text>
+      <view>【吃药记录 | {{latestMedicineDate}}】{{latestMedicine}}</view>
+      <!-- <text>\n</text> -->
+      <view>【看病记录 | {{latestConsultDate}}】{{latestConsult}}</view>
     </view>
   </view>
 </view>

@@ -1,6 +1,7 @@
 package com.csuyunlugu.ehome.config;
 
 import com.csuyunlugu.ehome.interceptor.JWTInterceptor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -19,6 +20,9 @@ public class WebConfig implements WebMvcConfigurer {
     public WebConfig(JWTInterceptor jwtInterceptor) {
         this.jwtInterceptor = jwtInterceptor;
     }
+
+    @Value("${jwt.exclude-urls}")
+    private String[] excludeUrls;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

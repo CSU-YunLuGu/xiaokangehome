@@ -179,13 +179,15 @@ Page({
       url: '/identity/info',
       method: 'GET'
     }).then(data => {
+      console.log("-")
+      console.log(data)
+      console.log("-")
       if (data === null) {
-        console.log(this.data)
         return;
       }
       this.setData({
-        certificatePicUrl: data.certificatePicUrl === "" ? "" : host + data.certificatePicUrl,
-        photoUrl: data.photoUrl === "" ? "" : host + data.photoUrl,
+        certificatePicUrl: data.certificatePicUrl === "" ? "" : data.certificatePicUrl,
+        photoUrl: data.photoUrl === "" ? "" : data.photoUrl,
         values: [data.major, data.job],
         valid: data.valid
       });
