@@ -32,9 +32,7 @@ page {
 
 .consulthistory {
   position: absolute;
-  top: 750rpx;
-  margin-top: 30rpx;
-  left: 50rpx;
+  top: 500rpx;
   width: 650rpx;
   padding-bottom: 10%;
 }

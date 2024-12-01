@@ -1,16 +1,18 @@
 <bg color="{{backgroundColor}}" />
 <title title="{{title}}" subtitle="{{subtitle}}"></title>
 <return />
-<view class="searchbox">
-  <view class="input">
-    <input bindinput="getQuestion" placeholder="在这里搜索你感兴趣的问题~" />
+<view class="box">
+  <view class="searchbox">
+    <view class="input">
+      <input bindinput="getQuestion" placeholder="在这里搜索你感兴趣的问题~" />
+    </view>
+    <view class="icon" bind:tap="search">
+      <image class="iconimg" src="../../images/search.png" />
+    </view>
   </view>
-  <view class="icon" bind:tap="search">
-    <image class="iconimg" src="../../images/search.png" />
-  </view>
-</view>
-<view class="consulthistory">
-  <view wx:for="{{consultHistory}}" wx:key="index">
-    <con bind:tap="onConsultPressed" isAsk="{{false}}" data-id="{{consultHistory[index].id}}" data-answerlength="{{consultHistory[index].answer.length}}" time="{{consultHistory[index].time}}" question="{{consultHistory[index].question}}" answer="{{consultHistory[index].answer}}"/>
+  <view class="consulthistory">
+    <view wx:for="{{consultHistory}}" wx:key="index">
+      <con bind:tap="onConsultPressed" isAsk="{{false}}" data-id="{{consultHistory[index].id}}" data-answerlength="{{consultHistory[index].answer.length}}" time="{{consultHistory[index].time}}" question="{{consultHistory[index].question}}"   answer="{{consultHistory[index].answer}}"/>
+    </view>
   </view>
 </view>

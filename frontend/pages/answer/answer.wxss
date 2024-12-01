@@ -4,11 +4,21 @@ page {
 
 .consulthistory {
   position: absolute;
-  top: 30%;
   margin-top: 30rpx;
-  left: 50rpx;
   width: 650rpx;
   padding-bottom: 10%;
+}
+
+.box {
+  position: absolute;
+  /* overflow: auto; */
+  width: 650rpx;
+  height: 950rpx;
+  left: 50rpx;
+  top: 30%;
+  /* background-color: white;
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.3);
+  border-radius: 15rpx; */
 }
 
 con {
@@ -19,8 +29,7 @@ con {
   width: 650rpx;
   height: 60rpx;
   position: absolute;
-  left: 50rpx;
-  top: 20%;
+  top: -100rpx;
   margin-top: 40rpx;
   border-radius: 15rpx;
   background: rgba(255, 255, 255, 1);

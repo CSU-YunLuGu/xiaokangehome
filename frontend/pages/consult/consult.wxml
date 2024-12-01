@@ -12,9 +12,9 @@
       提交
     </view>
   </view>
-</view>
-<view class="consulthistory">
-  <view wx:for="{{consultHistory}}" wx:key="index">
-    <con bind:tap="onConsultPressed" isAsk="{{true}}" data-id="{{consultHistory[index].id}}" data-answerlength="{{consultHistory[index].answer.length}}" time="{{consultHistory[index].time}}" question="{{consultHistory[index].question}}" answer="{{consultHistory[index].answer}}" />
+  <view class="consulthistory">
+    <view wx:for="{{consultHistory}}" wx:key="index">
+      <con bind:tap="onConsultPressed" isAsk="{{true}}" data-id="{{consultHistory[index].id}}" data-answerlength="{{consultHistory[index].answer.length}}" time="{{consultHistory[index].time}}" question="{{consultHistory[index].question}}" answer="{{consultHistory[index].answer}}" />
+    </view>
   </view>
 </view>
